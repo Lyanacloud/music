@@ -1,0 +1,26 @@
+.closeButton {
+    align-self: flex-end !important;
+}
+
+.title{
+    font-size: 4em !important;
+    color: #52238d;
+}
+.image{
+    width: 42svw !important;
+    height: 75svh !important;
+}
+.grid{
+    height: 50svh;
+    width: 70svw;
+}
+@media (max-width:1000px){
+    .image{
+        width: 80svw !important;
+        height: 40svh !important;
+    }
+    .grid{
+        height: 40svh !important;
+        width: 80svw !important;
+    }
+}

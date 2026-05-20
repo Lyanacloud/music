@@ -1,0 +1,48 @@
+.mainPaper{
+    width: 90svw;
+    height: auto;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4svh !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.grid {
+    width: 90svw;
+    height: auto;
+    align-self: center;
+}
+
+.title{
+    font-size: 6svw !important;
+    color: #0a259c;
+}
+
+.graph{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.bar{
+    height: 45svh !important;
+    width: 70svw !important;
+}
+
+.pie{
+    height: 50svh !important;
+    width: 50svw !important;
+}
+
+@media (max-width: 1000px){
+    .bar{
+        height: 25svh !important;
+        width: 90svw !important;
+    }
+    .pie{
+        height: 30svh !important;
+        width: 90svw !important;
+    }
+}
