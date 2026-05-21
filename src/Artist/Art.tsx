@@ -4,13 +4,14 @@ import {Link, useParams} from "react-router";
 import {useMemo} from "react";
 import type {EChartsOption} from "echarts";
 import ReactECharts from 'echarts-for-react';
-import styles from "./Artist.module.css"
-import {motion} from "motion/react"
+import styles from "./Artist.module.css";
+import {motion} from "motion/react";
+import type {Artist} from "../data/data.ts";
 
-function Artist() {
+function Art() {
     const params = useParams();
     const findArtist = useArtistStore((state)=>state.findArtist);
-    const artist = findArtist(Number(params.id));
+    const artist: Artist = findArtist(Number(params.id));
     const graphData = useMemo(()=> {
         if (!artist || !artist.graph_data) {
             return {values: [], months: [], events: []};
@@ -123,4 +124,4 @@ function Artist() {
     )
 }
 
-export default Artist
+export default Art

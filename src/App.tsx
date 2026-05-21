@@ -2,7 +2,7 @@ import './App.css'
 import {Routes, Route} from "react-router";
 import Home from "./Home/Home.tsx";
 import Analysis from "./Analyse/Analyse.tsx";
-import Artist from "./Artist/Artist.tsx";
+import Art from "./Artist/Art.tsx";
 import {AnimatePresence} from "motion/react"
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home/>} />
             <Route path="/analyticPage" element={<Analysis/>}/>
-            <Route path="/:id" element={<Artist/>}/>
+            <Route path="/:id" element={<Art/>}/>
         </Routes>
     </AnimatePresence>
 

@@ -1,11 +1,10 @@
-import React from "react";
 import { BrowserRouter } from "react-router";
-import App from "./app";
+import App from "./App";
 import {createRoot} from "react-dom/client";
 import '@mantine/core/styles.css';
 import {MantineProvider} from "@mantine/core";
 
-const root = document.getElementById("root");
+const root = document.getElementById("root")!;
 
 createRoot(root).render(
     <BrowserRouter>
